@@ -1,0 +1,78 @@
+<html>
+  <title>Shape Calculator</title>
+  <link rel="stylesheet" href="styles.css" />
+  <body>
+    <h1>Shape Calculator</h1>
+    <div class="flex-container">
+      <div class="description">
+        <h2>Welcome to Shape Calculator</h2>
+        <p>
+          <b>
+            Shape Calculator is an interactive web application. To the right you
+            will find the 3 step application. Follow the instructions in each
+            step. Clicking cancel will take you back to step 1. Enjoy!
+          </b>
+        </p>
+        <p>
+          A small river named Duden flows by their place and supplies it with
+          the necessary regelialia. It is a paradisematic country, in which
+          roasted parts of sentences fly into your mouth. Even the all-powerful
+          Pointing has no control about the blind texts it is an almost
+          unorthographic life One day however a small line of blind text by the
+          name of Lorem Ipsum decided to leave for the far World of Grammar. The
+          Big Oxmox advised her not to do so, because there were thousands of
+          bad Commas.
+        </p>
+      </div>
+      <div class="input-div">
+        <form class="input-form">
+          <h1>Select your shape:</h1>
+          <p>
+            Please select the shape that you would like to calculate the area of
+            and press the button "Go to step 2"
+          </p>
+          <input
+            type="radio"
+            id="rectangle"
+            onchange="shapes(rectangle)"
+            name="shape"
+          />
+          <label for="age1">Reactangle</label><br />
+          <input
+            type="radio"
+            id="circle"
+            name="shape"
+            onchange="shapes(circle)"
+          />
+          <label for="age2">Circle</label><br />
+          <input
+            type="radio"
+            id="square"
+            name="shape"
+            onchange="shapes(square)"
+          />
+          <label for="age3">Square </label><br />
+          <input
+            type="radio"
+            id="ellipse"
+            name="shape"
+            onchange="shapes(ellipse)"
+          />
+          <label for="age3" onchange="shape()">Ellipse </label><br /><br />
+        </form>
+        <button onclick="navigate()">Go to step 2</button>
+      </div>
+
+      <div class="ad-banner">Ad banner</div>
+    </div>
+  </body>
+
+  <script>
+    shapes = (e) => {
+      localStorage.setItem("option", e.id);
+    };
+    navigate = () => {
+      window.location.href = "/step2.html";
+    };
+  </script>
+</html>

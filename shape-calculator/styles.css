@@ -1,0 +1,41 @@
+.container1 {
+  margin: 0px 20px;
+}
+.form {
+  border: 2px solid grey;
+  border-radius: 10px;
+}
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+.description {
+  width: 40%;
+  justify-content: left;
+}
+.input-div {
+  width: 40%;
+  border: 1px solid grey;
+  border-radius: 10px;
+  margin: 5px;
+}
+
+.input-form {
+  margin: 5px;
+}
+.ad-banner {
+  background-color: lightgrey;
+  height: 240px;
+  width: 20%;
+  text-align: center;
+  margin: 20px;
+}
+.inp-box {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 20px;
+}
+input[type="text"] {
+  width: 200px;
+}
