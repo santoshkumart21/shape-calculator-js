@@ -6,7 +6,7 @@ export function shapeResult(number1, number2) {
     return this.number1 ** this.number1;
   };
 
-  this.reactangleRes = () => {
+  this.rectangleRes = () => {
     return this.number1 * this.number2;
   };
   this.circleRes = () => {
